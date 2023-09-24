@@ -1,0 +1,273 @@
+
+/****** Fonts *******/
+/* 
+    Feel free to change the path of the font to the location of your choice.
+    All font faces are included in the assets package.
+*/
+
+@font-face {
+	font-family: 'Neutra';
+     src: url('./assets/fonts/Neutra2Text-Book.otf');
+}
+
+@font-face {
+	font-family: 'Neutra Bold';
+	src: url('./assets/fonts/Neutra2Text-Bold.otf');
+}
+
+@font-face {
+	font-family: 'Neutra Semibold';
+	src: url('./assets/fonts/Neutra2Text-Demi.otf');
+}
+
+@font-face {
+	font-family: 'Neutra Italic';
+	src: url('./assets/fonts/Neutra2Text-BookItalic.otf');
+}
+
+
+/****** General Styles ******/
+
+:root{
+    --color-blue: #9CCAEA;
+    --color-light-blue: #A7D2E4;
+    --color-light-grey: #EAEAEA;
+    --color-med-grey: #cccccc;
+    --color-dark-grey: #2A2A2A;
+    --color-white: #ffffff;
+}
+
+html * {
+    outline: 0 !important;
+}
+
+body {
+	font-family: 'Georgia';
+    font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Neutra';
+    font-variant-numeric: lining-nums;
+    text-transform: uppercase;
+    color: var(--color-dark-grey);
+    margin-bottom: 0.25rem;
+}
+h1, h2{
+    letter-spacing: 1px;
+}
+h3, h4, h5, h6{
+    letter-spacing: 0.5px;
+}
+h1{font-size: 36px;}
+h2{font-size: 32px;}
+h3{font-size: 28px;}
+h4{font-size: 24px;}
+h5{font-size: 20px;}
+h6{font-size: 18px;}
+
+p{
+    font-family: 'Georgia';
+    font-size: 16px;
+    line-height: 18px;
+}
+p.sans-serif{
+    font-family: 'Neutra';
+    font-variant-numeric: lining-nums;
+}
+p.sans-serif.bold{
+    font-family: 'Neutra Bold';
+}
+p.sans-serif.italic{
+    font-family: 'Neutra Italic';
+}
+
+a {
+    cursor: pointer;
+    font-family: 'Georgia';
+	font-size: 16px;
+	color: var(--color-blue);
+	font-style: italic;
+	font-weight: bold;
+}
+a:visited, a:focus, a:active, a:hover {
+    text-decoration: none !important;
+}
+a:visited{
+	color: var(--color-blue);
+}
+a:hover {
+	color: var(--color-light-blue);
+}
+
+.bg-light-grey{
+    background: var(--color-light-grey);
+}
+.bg-dark-grey{
+    background: var(--color-dark-grey);
+}
+
+.btn {
+    font-family: 'Neutra Semibold';
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    border-radius: 0px;
+	padding: 15px 30px;
+    border: 1px solid black;
+}
+.btn-black{
+	background: var(--color-dark-grey); 
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-black:hover, .btn-black:focus {
+    color: var(--color-med-grey);
+}
+.btn-red{
+    background-color: #ce2929;
+    color: #000000;
+    border: none;
+}
+
+/****** Your Custom Styles ******/
+/* 
+    Add any custom styles you need can go here
+*/
+
+.top-container{
+     background-color: #f5f2f2;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+     position: relative;
+     height: 64px;
+     width: 412px;
+}
+
+.menu-bar span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 40px;
+    color: #fff;
+    padding: 12px 12px;
+    cursor: pointer;
+    background: 000;
+
+}
+
+#menu{
+    background-color: #2A2A2A;
+}
+
+.logo img{
+
+    width: 50px;
+    position: relative;
+    padding-top: 0;
+    left: 40px;
+    padding: 10px 18px ;
+}
+
+.cart i{
+    position: relative;
+    font-size: 30px;
+
+}
+
+.cart{
+    position: absolute;
+    right: 110px;
+    top: 15px;
+    border-right: 2px solid #dadada;
+    padding-right: 30px;
+    cursor: pointer;
+}
+   
+
+.log-in a{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: 'Neutra';
+    font-style: normal;
+    color: #000000;
+}
+
+.lock i{
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    border-left: #2A2A2A;
+    font-size: 13px;
+}
+
+.header-intro img{
+    position: absolute;
+    width: 2000px;
+    left: -170%
+}
+
+.header-body h1{
+    position: absolute;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 45px;
+    margin-left: 22%;
+    margin-top: 90px;
+    font-family: 'Neutra';
+    font-variant-numeric: lining-nums;
+    text-transform: uppercase;
+    color: #fdfffe;
+    
+}
+.header-body h1 i{
+    font-size: 7px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.header-body h2{
+    position: absolute;
+    font-family: 'Neutra';
+    font-variant-numeric: lining-nums;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 0.25rem;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 50%;
+}
+
+.header-body p{
+    position: absolute;
+    font-family: Georgia,;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin: 75% 45px;
+
+}
+
+.mid-link a{
+    position: relative;
+    cursor: pointer;
+    font-family: 'Georgia';
+	font-size: 16px;
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 140%;
+}
+
+.appointment i{
+    font-size: 15px;
+}
